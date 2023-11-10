@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="./CSS/styles.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
      <header>
           <div class="navBrand">
@@ -17,9 +20,12 @@
           </div>
           <nav class="navBar">
                <ul class="nav-list">
-                    <li class="nav-item"><i class="fa-solid fa-house" style="color: #94B6EF;"></i><a class="subrayado" href="">Home</a></li>
-                    <li class="nav-item"><i class="fa-solid fa-circle-info" style="color: #94B6EF;"></i><a class="subrayado" href="#acercaNosotros">Acerca de nosotros</a></li>
-                    <li class="nav-item"><i class="fa-solid fa-user" style="color: #94B6EF;"></i><a class="subrayado" href="">Inicio de sesión</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-house" style="color: #94B6EF;"></i><a class="subrayado"
+                              href="./index.html">Home</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-circle-info" style="color: #94B6EF;"></i><a
+                              class="subrayado" href="#acercaNosotros">Acerca de nosotros</a></li>
+                    <li class="nav-item"><i class="fa-solid fa-user" style="color: #94B6EF;"></i><a class="subrayado"
+                              href="#inicioSesion">Inicio de sesión</a></li>
                </ul>
           </nav>
      </header>
@@ -31,64 +37,88 @@
                          <div class="contenedorTitulo">
                               <h1 class="titulo">¡Bienvenido al Centro de educación por el futuro!</h1>
                          </div>
-                         
+
                          <div class="contenedorInfo">
                               <p class="parrafoInicio">
-                                   Encontrá los mejores cursos para capacitarte profesionalmente y mejorar tus habilidades. Contá con acceso a los mejores profesores y a las mejores tecologías para que puedas aprender de la mejor manera.
+                                   Encontrá los mejores cursos para capacitarte profesionalmente y mejorar tus
+                                   habilidades. Contá con acceso a los mejores profesores y a las mejores tecologías
+                                   para que puedas aprender de la mejor manera.
                               </p>
                          </div>
                     </div>
                </article>
 
-               <article class="metodos">
-                    <div class="container-md">
-                         <div class="accordion" id="accordionExample">
+               <article class="metodos container-md">
+                    <div class="container">
+                         <div class="accordion accordion-flush" id="accordionExample">
                               <div class="accordion-item">
                                    <h2 class="accordion-header">
-                                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Métodos de enseñanza
-                                   </button>
+                                        <button class="accordion-button collapsed" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                             aria-expanded="false" aria-controls="collapseOne">
+                                             Métodos de enseñanza
+                                        </button>
                                    </h2>
-                              <div id="collapseOne" class="accordion-collapse">
-                                   <div class="accordion-body">
-                                        Nosotros creemos que los alumnos no deben ser calificados numéricamente. Nos enfocamos en la <strong>calidad</strong> de enseñanza de los profesores y que no estén limitados por un sistema de calificaciones. <br><br>
+                                   <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                             Nosotros creemos que los alumnos no deben ser calificados numéricamente.
+                                             Nos enfocamos en la <strong>calidad</strong> de enseñanza de los profesores
+                                             y que no estén limitados por un sistema de calificaciones. <br><br>
+                                        </div>
                                    </div>
-                              </div>
-                              </div>
-                              <div class="accordion-item">
-                                   <h2 class="accordion-header">
-                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        ¿Hay campus virtual?
-                                   </button>
-                                   </h2>
-                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                   <div class="accordion-body">
-                                        <strong>Si, hay campus virtual.</strong> Tendrá acceso 24hs a los cursos comprados, clases grabadas, foros de consulta y grupos realizados por alumnos. <br><br> 
-                                   </div>
-                              </div>
                               </div>
                               <div class="accordion-item">
                                    <h2 class="accordion-header">
-                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        ¿Hay activiades extracurriculares?
-                                   </button>
+                                        <button class="accordion-button collapsed" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                             aria-expanded="false" aria-controls="collapseTwo">
+                                             ¿Hay campus virtual?
+                                        </button>
                                    </h2>
-                                   <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                   <div class="accordion-body">
-                                        Todo alumno tendrá la posibilidad de realizar activiades extracurriculares. Las mismas son sin fecha de entrega obligatoria y no son calificadas. Semanalmente se agregan desafíos que, si son completados, suman puntos para <strong>canjear por otros cursos.</strong><br><br>
+                                   <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                             <strong>Si, hay campus virtual.</strong> Tendrá acceso 24hs a los cursos
+                                             comprados, clases grabadas, foros de consulta y grupos realizados por
+                                             alumnos. <br><br>
+                                        </div>
                                    </div>
+                              </div>
+                              <div class="accordion-item">
+                                   <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                             aria-expanded="false" aria-controls="collapseThree">
+                                             ¿Hay actividades extracurriculares?
+                                        </button>
+                                   </h2>
+                                   <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                             Todo alumno tendrá la posibilidad de realizar actividades
+                                             extracurriculares. Las mismas son sin fecha de entrega obligatoria y no son
+                                             calificadas. Semanalmente se agregan desafíos que, si son completados,
+                                             suman puntos para <strong>canjear por otros cursos.</strong><br><br>
+                                        </div>
                                    </div>
                               </div>
                          </div>
+
                     </div>
 
-                    <div class="container-sm">
+                    <div class="container">
                          <div class="contenedorRedesSociales">
                               <div class="redesSociales">
                                    <ul class="redes-list">
-                                        <li><i class="fa-brands fa-instagram" style="color: #f4f2ef"></i></li>
-                                        <li><i class="fa-brands fa-linkedin" style="color: #f4f2ef;"></i></li>
-                                        <li><i class="fa-brands fa-github" style="color: #f4f2ef;"></i></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                                                       class="fa-brands fa-instagram" style="color: #213e60"></i></a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/feed/" target="_blank"><i
+                                                       class="fa-brands fa-linkedin" style="color: #213e60;"></i></a>
+                                        </li>
+                                        <li><a href="https://www.github.com/" target="_blank"><i
+                                                       class="fa-brands fa-github" style="color: #213e60;"></i></a></li>
                                    </ul>
                               </div>
                          </div>
@@ -106,13 +136,19 @@
 
                               <div class="contenedorTextoAbout">
                                    <p class="textoAbout">
-                                        Centro de Educación por el Futuro es una organización creada en el año 2015 y nos dedicamos a brindar capacitaciones en las principales tecnologías de la información. Nuestra oferta se encuentra orientada al desarrollo profesional buscando potenciar  <strong>las habilidades de los alumnos.</strong>
+                                        Centro de Educación por el Futuro es una organización creada en el año 2015 y
+                                        nos dedicamos a brindar capacitaciones en las principales tecnologías de la
+                                        información. Nuestra oferta se encuentra orientada al desarrollo profesional
+                                        buscando potenciar <strong>las habilidades de los alumnos.</strong>
                                         <br>
-                                        Poseemos un perfil altamente dinámico y nos adaptamos rápidamente a los cambios que exigen las tecnologías <strong>IT</strong>
+                                        Poseemos un perfil altamente dinámico y nos adaptamos rápidamente a los cambios
+                                        que exigen las tecnologías <strong>IT</strong>
                                    </p>
 
                                    <p class="textoAbout">
-                                        Los planes de estudio junto con sus manuales de contenido están sometidos a una constante actualización, reflejando los cambios y las tendencias que se producen en el campo de IT.
+                                        Los planes de estudio junto con sus manuales de contenido están sometidos a una
+                                        constante actualización, reflejando los cambios y las tendencias que se producen
+                                        en el campo de IT.
                                    </p>
                               </div>
                          </div>
@@ -121,15 +157,17 @@
 
                <article class="cursos">
                     <div class="container-md">
+                         <h2 class="tituloCursos">Anotaté en algunos de nuestros cursos más destacados:</h2>
                          <div class="contenedorTarjetas">
                               <div class="tarjetaCurso">
                                    <div class="headerCurso">
-                                        <i class="fa-brands fa-python" style="color: #213e60;"></i>
-                                        <h4 class="tituloCurso">Introducción a Python</h4>
+                                        <i class="fa-solid fa-microchip" style="color: #213e60;"></i>
+                                        <h4 class="tituloCurso">Control automático</h4>
                                    </div>
                                    <div class="bodyCurso">
                                         <span>Dificultad: básica</span>
-                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                              <div class="progress-bar" style="width:25%"></div>
                                         </div>
                                         <span>Precio: <strong>$30.000</strong></span>
@@ -138,15 +176,16 @@
                                         <button class="botonVer">Ver más</button>
                                    </div>
                               </div>
-     
+
                               <div class="tarjetaCurso">
                                    <div class="headerCurso">
-                                        <i class="fa-brands fa-figma" style="color: #213e60;"></i>
-                                        <h4 class="tituloCurso">Diseño UX/UI con Figma</h4>
+                                        <i class="fa-solid fa-shield-halved" style="color: #213e60;"></i>
+                                        <h4 class="tituloCurso">Seguridad informática</h4>
                                    </div>
                                    <div class="bodyCurso">
                                         <span>Dificultad: intermedia</span>
-                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                              <div class="progress-bar" style="width: 50%"></div>
                                         </div>
                                         <span>Precio: <strong>$42.000</strong></span>
@@ -158,12 +197,13 @@
 
                               <div class="tarjetaCurso">
                                    <div class="headerCurso">
-                                        <i class="fa-brands fa-react" style="color: #213e60;"></i>
-                                        <h4 class="tituloCurso">Desarrollo con React</h4>
+                                        <i class="fa-solid fa-terminal" style="color: #213e60;"></i>
+                                        <h4 class="tituloCurso">Sistemas embebidos</h4>
                                    </div>
                                    <div class="bodyCurso">
                                         <span>Dificultad: avanzada</span>
-                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                              <div class="progress-bar" style="width:75%"></div>
                                         </div>
                                         <span>Precio: <strong>$75.000</strong></span>
@@ -172,18 +212,103 @@
                                         <button class="botonVer">Ver más</button>
                                    </div>
                               </div>
-     
+
                          </div>
                     </div>
                </article>
           </section>
+
+          <section id="inicioSesion">
+               <div class="container-md">
+                    <h2 class="tituloLogin">¿Qué estás esperando para empezar?</h2>
+                    <p class="parrafoLogin">Logeate en el <strong>campus</strong>y seleccioná el curso que más te guste
+                    </p>
+               </div>
+               <article class="login container-md">
+                    <div class="columnaIzquierdaLogin">
+                         <div class="card mb-3" style="max-width: 540px; min-height: 20em;">
+                              <div class="row g-0" style="height: 100%">
+                                   <div class="col-md-4">
+                                        <img src="./IMG/Fondo login.png" class="img-fluid rounded-start" alt="Imagen estudio">
+                                   </div>
+                                   <div class="col-md-8">
+                                        <div class="card-body" style="height: 100%;">
+                                             <div class="cardHeader">
+                                                  <i class="fa-solid fa-user"></i>
+                                                  <h3 class="card-title">Inicia sesión</h3>
+                                             </div>
+                                             <form id="formularioLogin">
+                                                  <label for="usuario">Ingrese su usuario</label>
+                                                  <input type="text" name="usuario" id="usuario">
+                                                  <p id="alertaUsuario"></p>
+
+                                                  <label for="contraseña">Ingrese su contraseña</label>
+                                                  <input type="password" name="contraseña" id="contraseña">
+                                                  <p id="alertaContraseña"></p>
+
+                                                  <button id="botonLogeo" class="botonVer" form="formularioLogin">
+                                                       Ingresar
+                                                  </button>
+                                             </form>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="columnaDerechaLogin">
+                         <img src="./IMG/imagen main.png" alt="Imagen estudios">
+                    </div>
+
+               </article>
+
+          </section>
      </main>
 
      <footer>
+          <div class="filaSuperiorFooter">
+               <section id="redes">
+                    <h4>¡Seguinos en nuestras redes y enterate de las novedades!</h4>
+                    <div class="redesFooter">
+                         <ul class="redesFooter">
+                              <li>
+                                   <a href="https://www.instagram.com/" target="_blank"><i
+                                   class="fa-brands fa-instagram" style="color: #213e60"></i></a>
+                              </li>
 
+                              <li>
+                                   <a href="https://www.linkedin.com/feed/" target="_blank"><i
+                                   class="fa-brands fa-linkedin" style="color: #213e60;"></i></a>
+                              </li>
+
+                              <li>
+                                   <a href="https://www.github.com/" target="_blank"><i
+                                   class="fa-brands fa-github" style="color: #213e60;"></i></a>
+                              </li>
+                         </ul>
+                    </div>
+               </section>
+     
+               <section id="ubicacion">
+                    <h4>Vení a nuestra sucursal presencial en Constitución 180, Haedo.</h4>
+                    <div class="ubicacionFooter">
+                         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.334777087974!2d-58.59454392489921!3d-34.64624737293909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc784e6a00bcf%3A0xa2c5feb7ace3739e!2sConstituci%C3%B3n%20180%2C%20B1706%20Haedo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1699627554061!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+               </section>
+          </div>
+
+          <div class="filaInferiorFooter">
+               <section id="derechos">
+                    <p class="derechosReservados">@Todos los derechos reservador a Centro de Educación por el Futuro</p>
+               </section>
+          </div>
      </footer>
 
      <script src="https://kit.fontawesome.com/a72fbbe819.js" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+     crossorigin="anonymous"></script>
+     <script src="./JS/script.js"></script>
 </body>
+
 </html>

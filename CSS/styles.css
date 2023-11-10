@@ -114,7 +114,7 @@ header {
 
 .parrafoInicio {
      color: var(var(--colorSecundario));
-     font-size: 1.1em;
+     font-size: 1.2em;
 }
 
 .metodos {
@@ -143,22 +143,13 @@ strong {
 }
 
 .redesSociales {
-     border-radius: 5px;
-     width: 60%;
+     width: 100%;
      display: flex;
      justify-content: center;
-     background-color: var(--colorPrincipal);
      height: 4.5em;
      transition: .5s all ease-out;
-     box-shadow:
-     3.1px 12.5px 10px rgba(0, 0, 0, 0.05),
-     25px 100px 80px rgba(0, 0, 0, 0.1)
-;
 }
 
-.redesSociales:hover {
-     transform: translateX(-20px);
-}
 
 .redes-list {
      width: 100%;
@@ -170,17 +161,19 @@ strong {
 }
 
 .redes-list li i {
-     font-size: 2em;
+     font-size: 2.5em;
      transition: .5s all ease-in-out;
 }
 
 .redes-list li i:hover {
      transform: translateY(-5px);
+     transform: scale(1.1);
 }
 
 #acercaNosotros {
-     height: 100vh;
-     background-color: var(--colorTerciario);
+     min-height: 100vh;
+     background: rgb(148,182,239);
+     background: linear-gradient(0deg, rgba(148,182,239,1) 46%, rgba(244,242,239,1) 100%);
      padding: 2em;
 }
 
@@ -192,12 +185,14 @@ strong {
 }
 
 .textoAbout  {
-     color: var(--colorPrincipal);
-     font-size: 1.4em;
+     text-align: justify;
+     color: #303030;
+     font-size: 1.2em;
 }
 
 #acercaNosotros strong {
-     color: #001d3d;
+     color: #303030;
+     font-weight: 700;
 }
 
 .cursos {
@@ -226,11 +221,18 @@ strong {
      width: 12em;
      background-color: var(--colorSecundario);
      margin-right: 3em;
-     transition: 1s;
+     transition: .5s all ease-in;
 }
 
 .tarjetaCurso:hover {
-     transform: scale(1.1);
+     box-shadow:
+     0.3px 2.2px 2.2px rgba(0, 0, 0, 0.065),
+     0.8px 5.4px 5.3px rgba(0, 0, 0, 0.093),
+     1.5px 10.1px 10px rgba(0, 0, 0, 0.115),
+     2.7px 18.1px 17.9px rgba(0, 0, 0, 0.137),
+     5px 33.8px 33.4px rgba(0, 0, 0, 0.165),
+     12px 81px 80px rgba(0, 0, 0, 0.23)
+     ;
 }
 
 .headerCurso {
@@ -264,6 +266,7 @@ strong {
 }
 
 .botonVer {
+     font-weight: 700;
      width: 100%;
      border: none;
      background-color: var(--colorPrincipal);
@@ -276,5 +279,149 @@ strong {
      color: var(--colorPrincipal);
 }
 
+.tituloCursos {
+     color: #303030;
+     font-weight: 700;
+     margin-bottom: .5em;
+}
+
+#inicioSesion {
+     padding: 2em;
+     height: 100vh;
+     background: rgb(33,62,96);
+     background: linear-gradient(0deg, rgba(33,62,96,1) 0%, rgba(148,182,239,1) 100%);
+}
+
+.login {
+     height: 80%;
+     display: flex;
+     flex-direction: row;
+}
+
+.tituloLogin {
+     font-size: 4rem;
+     color: var(--colorPrincipal);
+     font-weight: 700;
+}
+
+.parrafoLogin {
+     font-size: 1.2em;
+     color: #303030;
+}
+
+.parrafoLogin strong {
+     color: #303030;
+     font-weight: 700;
+}
+
+.columnaIzquierdaLogin {
+     display: flex;
+     align-items: center;
+     width: 50%;
+     height: 100%;
+}
+
+.columnaDerechaLogin {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.col-md-4 img {
+     height: 100%;
+}
+
+.cardHeader .fa-user {
+     font-size: 2em;
+}
+
+.card-body {
+     display: flex;
+     flex-direction: column;
+}
+
+.cardHeader {
+     text-align: center;
+}
+
+form {
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+footer {
+     display: flex;
+     flex-direction: column;
+     height: auto;
+}
+
+.filaSuperiorFooter {
+     padding: 2em;
+     background-color: var(--colorCuternario);;
+     display: flex;
+     height: 90%;
+     width: 100%;
+}
+
+.filaInferiorFooter {
+     height: 30%;
+}
+
+#redes, 
+#contacto {   
+     width: 50%;
+}
+
+.redesFooter {
+     height: 80%;
+     width: 100%;
+     padding: 0;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.redesFooter li i {
+     font-size: 2em;
+}
+
+
+.ubicacionFooter {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 80%;
+     width: 100%;
+}
+
+.mapa {
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     height: 100%;
+     width: 50%;
+}
+
+.filaInferiorFooter {
+     background-color: var(--colorPrincipal);
+     height: 8vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.derechosReservados {
+     color: #fafafa;
+}
+
+#alertaUsuario, 
+#alertaContraseña {
+     color: rgb(134, 5, 5);
+     transition: .5 all ease-in;
+}
 
 
