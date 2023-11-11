@@ -112,9 +112,15 @@ header {
 }
 
 .card {
+    justify-content: center;
+    align-items: center;
     margin-right: 1em;
     padding: 0;
     transition: .5s all ease-in-out;
+}
+
+.card-body {
+    height: fit-content;
 }
 
 .row {
@@ -127,15 +133,22 @@ header {
 }
 
 #misHorarios {
+    justify-content: flex-start;
     padding: 2em;
-    min-height: 100vh;
+    height: 100vh;
     background-color: var(--colorTerciario);
+}
+
+#misHorarios article {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 
 .tituloSecundario {
     font-size: 2.5rem;
-    color:  var(--colorPrincipal);
+    color: var(--colorPrincipal);
 }
 
 .contenedorTituloHorarios {
@@ -150,6 +163,65 @@ header {
     color: #303030;
 }
 
+.botonCancelar {
+    border: none;
+    background: transparent;
+}
+
+.botonCancelar i {
+    transition: .5s all ease-in;
+}
+
+.botonCancelar i:hover {
+    transform: translateY(-3px);
+}
+
+.botonCancelar i:active {
+    transform: scale(1.5);
+}
+
+#accesibilidad {
+    padding: 6em;
+    min-height: 100vh;
+    background-color: var(--colorSecundario);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenedorForosClases {
+    margin-top: 2em;
+    display: flex;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.iconos i {
+    font-size: 4em;
+    color: var(--colorPrincipal);
+    transition: .5s all ease-in;
+}
+
+.iconos i:hover {
+    color: var(--colorCuternario);
+    transform: scale(1.1);
+}
+
+
+.foros,
+.clases {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /*------------------------------------ FOOTER --------------------------*/
 
@@ -161,7 +233,8 @@ footer {
 
 .filaSuperiorFooter {
     padding: 2em;
-    background-color: var(--colorCuternario);;
+    background-color: var(--colorCuternario);
+    ;
     display: flex;
     height: 90%;
     width: 100%;
@@ -171,8 +244,8 @@ footer {
     height: 30%;
 }
 
-#redes, 
-#contacto {   
+#redes,
+#contacto {
     width: 50%;
 }
 
@@ -218,4 +291,106 @@ footer {
 .derechosReservados {
     text-align: center;
     color: #fafafa;
+}
+
+#seminarios {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--colorTerciario);
+    min-height: 100vh;
+}
+
+/*------------------------- MEDIAS QUERIES-----------------------*/
+
+@media screen and (max-width: 860px) {
+    #accesibilidad {
+        padding: 2em;
+    }
+    .nombreNav {
+        font-size: 1.5em;
+    }
+    .contenedorForosClases {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 60%;
+    }
+    .tituloSecundario {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nombreNav {
+        font-size: 1.2em;
+    }
+
+    .navBar {
+        width: 100%;
+    }
+
+    .navBrand {
+        margin-left: 2em;
+    }
+
+    .nav-list {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .filaSuperiorFooter {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ubicacion,
+    #redes {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .login {
+        height: 30em;
+    }
+    .foros,
+    .clases {
+        width: 100%;
+        margin: 2em;
+    }
+    .navBrand {
+        display: none;
+    }
+
+    .metodos {
+        flex-direction: column;
+        height: 30em;
+        justify-content: space-around;
+    }
+
+    .accordion {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:436px) {
+    .titulo {
+        font-size: 2rem;
+    }
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item i {
+        margin-bottom: 5px;
+    }
 }

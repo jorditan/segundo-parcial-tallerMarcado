@@ -336,7 +336,9 @@ strong {
      font-size: 2em;
 }
 
+
 .card-body {
+     height: fit-content;
      display: flex;
      flex-direction: column;
 }
@@ -428,11 +430,18 @@ footer {
 
 .card {
      max-width: 540px; 
-     max-height: 20em;
+     max-height: 21em;
+     overflow: hidden;
 }
 
 
 /*------------------------- MEDIAS QUERIES-----------------------*/
+
+@media screen and (max-width: 1198px) {
+     .col-md-4  {
+          display: none;
+     }
+}
 
 @media screen and (max-width: 995px) {
      .login {
@@ -484,9 +493,6 @@ footer {
      }
      .card {
           width: 25em;
-     }
-     .col-md-4 img {
-          display: none;
      }
      .columnaDerechaLogin img {
           height: 80%;

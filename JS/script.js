@@ -4,8 +4,9 @@ const contraseña = document.getElementById('contraseña');
 const alertaUsuario = document.getElementById('alertaUsuario');
 const alertaContraseña = document.getElementById('alertaContraseña');
 
-const usuarioCorrecto = 'Agustina'
-const contraseñaCorecta = 'SwiftiesPower'
+const usuarioCorrectoAlumno = 'agustina'
+const usuarioCorrectoDocente = 'rodrigo'
+const contraseñaCorrecta = '123'
 
 formulario.addEventListener('submit', function(e){ 
     e.preventDefault() 
@@ -13,28 +14,27 @@ formulario.addEventListener('submit', function(e){
     let contraseñaIngresada = contraseña.value;
 
     ingresarAlumnoSiEsValido(usuarioIngresado, contraseñaIngresada); 
+    ingresarDocenteSiEsValido(usuarioIngresado, contraseñaIngresada);
 })
 
 function ingresarAlumnoSiEsValido (usuarioIngresado, contraseñaIngresada) {
-    if (usuarioIngresado === usuarioCorrecto && contraseñaIngresada === contraseñaCorecta) {
-        window.location.href = './alumno.html';
-        usuario.value = '';
-        contraseña.value = '';
+    if (usuarioIngresado === usuarioCorrectoAlumno && contraseñaIngresada === contraseñaCorrecta) {
+        window.location.href = './alumno.html?usuario=' + usuarioIngresado;
     }
     else {
-        validarUsuario(usuarioIngresado, usuarioCorrecto);
-        validarContraseña(contraseñaIngresada, contraseñaCorecta);
+        validarUsuario(usuarioIngresado, usuarioCorrectoAlumno);
+        validarContraseña(contraseñaIngresada, contraseñaCorrecta);
     }
 }
 
-function validarUsuario(usuarioIngresado, usuarioCorrecto) {
+function validarUsuario(usuarioIngresado, usuarioCorrectoAlumno) {
     if (usuarioIngresado == '') {
         alertaUsuario.innerHTML = 'Porfavor, ingrese un usuario'
         setTimeout(() => {
             alertaUsuario.innerHTML = ''
         }, 3000);
     }
-    else if (usuarioIngresado !== usuarioCorrecto) {
+    else if (usuarioIngresado !== usuarioCorrectoAlumno) {
         alertaUsuario.innerHTML = 'Ese usario es inexistente, porfavor ingrese otro'
         setTimeout(() => {
             alertaUsuario.innerHTML = ''
@@ -42,17 +42,23 @@ function validarUsuario(usuarioIngresado, usuarioCorrecto) {
     }
 }
 
-function validarContraseña(contraseñaIngresada, contraseñaCorecta) {
+function validarContraseña(contraseñaIngresada, contraseñaCorrecta) {
     if (contraseñaIngresada == '') {
         alertaContraseña.innerHTML = 'Porfavor, ingrese una contraseña'
         setTimeout(() => {
             alertaContraseña.innerHTML = ''
         }, 3000);
     }
-    else if (contraseñaIngresada != contraseñaCorecta) {
+    else if (contraseñaIngresada != contraseñaCorrecta) {
         alertaContraseña.innerHTML = 'Esa contraseña no es la correcta, porfavor ingrese otra'
         setTimeout(() => {
             alertaContraseña.innerHTML = ''
         }, 3000);
+    }
+}
+
+function ingresarDocenteSiEsValido(usuarioIngresado, usuarioCorrectoDocente, contraseñaIngresada) {
+    if (usuarioIngresado === usuarioCorrectoDocente && contraseñaIngresada === contraseñaCorrecta) {
+        window.location.href = './docente.html?usuario=' + usuarioIngresado;
     }
 }

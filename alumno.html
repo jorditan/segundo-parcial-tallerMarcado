@@ -24,8 +24,8 @@
                 <li class="nav-item"><i class="fa-solid fa-house" style="color: #94B6EF;"></i><a class="subrayado"
                         href="./index.html">Home</a></li>
                 <li class="nav-item"><i class="fa-solid fa-chalkboard-user" style="color: #94B6EF;"></i><a
-                        class="subrayado" href="#inicioSesion">Cursos</a></li>
-                <li class="nav-item subrayado">Usuario:</li>
+                        class="subrayado" href="#accesibilidad">Cursos</a></li>
+                <li class="nav-item" id="nombreUser">Usuario:</li>
             </ul>
         </nav>
     </header>
@@ -37,7 +37,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="titulo">¡Bienvenido!</h1>
-                            <h2 class="subtitulo" id="nombreAlumno">Nombre del alumno</h2>
+                            <h2 class="subtitulo" id="nombreAlumno"></h2>
                         </div>
 
                         <div class="col-md-12">
@@ -57,7 +57,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <a class="card-title" href="#">Foro de consultas</a>
+                                            <a class="card-title" href="#accesibilidad">Foro de consultas</a>
                                             <p class="card-text">¡Accedé al foro de consultas en cualquier momento!
                                                 Consultá tus dudas en la comunidad y aprovechá la experiencia de tus
                                                 compañeros.
@@ -94,7 +94,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <a href="" class="card-title">Clases grabadas</a>
+                                            <a href="#accesibilidad" class="card-title">Clases grabadas</a>
                                             <p class="card-text">Tené acceso a tus clases las 24 horas del día. ¡No
                                                 lamentes haberte perdido una clase! Acá la podés volver a ver
                                             </p>
@@ -111,7 +111,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <a href="" class="card-title">Horario</a>
+                                            <a href="#misHorarios" class="card-title">Horario</a>
                                             <p class="card-text">A la hora de estudiar es muy importante tener los
                                                 horarios organizados. <strong>Consultá los tuyos.</strong>
                                             </p>
@@ -181,11 +181,116 @@
                                     <td>Presencial</td>
                                     <td>Virtual</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">¿Querés cancelar tu asistencia?</th>
+                                    <td><button class="botonCancelar"><i class="fa-solid fa-ban"
+                                                style="color: red;"></i></button></td>
+                                    <td><button class="botonCancelar"><i class="fa-solid fa-ban"
+                                                style="color: red;"></i></button></td>
+                                    <td><button class="botonCancelar"><i class="fa-solid fa-ban"
+                                                style="color: red;"></i></button></td>
+                                    <td><button class="botonCancelar"><i class="fa-solid fa-ban"
+                                                style="color: red;"></i></button></td>
+                                </tr>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
             </article>
+        </section>
+
+
+        <section id="accesibilidad">
+            <article class="inicioAcceso">
+                <div class="iconos">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <hr>
+                <h4 class="tituloSecundario">¡Accede al foro para contactar con alumnos de distintas materias! Formá
+                    parte de grupos de Discord y de WhatsApp.</h4>
+                <h4 class="tituloSecundario">¿Te perdiste una clase? ¡No te preocupes! Mirá las clases grabadas</h4>
+            </article>
+
+            <div class="contenedorForosClases">
+                <article class="foros">
+                    <div class="contenedor">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Foro de consultas</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Conectá con otros estudiantes</h6>
+                                <p class="card-text">¡Accedé a grupos de WhatsApp, canales de Discord, chats de
+                                    consulta, desafíos y mucho más!</p>
+                                <a href="#" id="cursos" class="card-link">Ingresá</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="clases">
+                    <div class="contenedor">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Cursos</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Profesionalizate y asegurá tu futuro
+                                </h6>
+                                <p class="card-text">Empezá a capacitarte para el mundo laboral. Encontrá cursos de
+                                    robótica económicos. A partir de 5 años hasta los 17.</p>
+                                <a href="#" class="card-link">Ingresá</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="seminarios">
+            <div class="container-md">
+                <div class="contenedorTitulo">
+                    <h1 class="tituloSecundario">¡Anotate en nuestros seminarios y charlas!</h1>
+                </div>
+
+                <div class="contenedorFormulario">
+                    <form id="formularioSeminario">
+                        <fieldset>
+                            <legend>Semana 2 primer cuatrimestre 2024</legend>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Ingrese su email</label>
+                                <input type="email" id="correo" class="form-control"
+                                    placeholder="Ingrese su correo electrónico">
+                                <p id="alertaCorreo" style="color: rgb(105, 3, 3);"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="observaciones" class="form-label">Observaciones</label>
+                                <input type="text" id="observaciones" class="form-control">
+                                <p id="alertaObservaciones" style="color: rgb(105, 3, 3)"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="seleccionSeminario" class="form-label">Selcciona el seminario a participar</label>
+                                <select id="seleccionSeminario" class="form-select">
+                                    <option>Seleccione un seminario</option>
+                                    <option>El futuro de la robótica en la medicina</option>
+                                    <option>Robótica en la vida diaria: asistentes personales y domésticos</option>
+                                    <option>Inteligencia artificial y ética de robótica</option>
+                                </select>
+                                <p id="alertaSeminario" style="color: rgb(105, 3, 3);"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="seleccionHorario" class="form-label">Fecha y hora</label>
+                                <select id="seleccionHorario" class="form-select">
+                                    <option>Selecciona una opción</option>
+                                    <option>Lunes 19 de febrero, 20:30hs</option>
+                                    <option>Martes 20 de febrero, 19:00hs</option>
+                                    <option>Miercoles 21 de febrero, 13:00hs</option>
+                                    <option>Sabado 24 de febrero, 10:00hs</option>
+                                </select>
+                                <p id="alertaHorario" style="color: rgb(105, 3, 3);"></p>
+                            </div>
+                            <button class="btn btn-primary" form="formularioSeminario">Reservar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -238,6 +343,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="./JS/scriptAlumno.js">
+
+    </script>
 </body>
 
 </html>
