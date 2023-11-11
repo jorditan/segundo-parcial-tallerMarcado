@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,28 +23,221 @@
             <ul class="nav-list">
                 <li class="nav-item"><i class="fa-solid fa-house" style="color: #94B6EF;"></i><a class="subrayado"
                         href="./index.html">Home</a></li>
-                <li class="nav-item"><i class="fa-regular fa-calendar" style="color: #94B6EF;"></i><a class="subrayado"
-                        href="#acercaNosotros">Mis horarios</a></li>
-                <li class="nav-item"><i class="fa-solid fa-chalkboard-user" style="color: #94B6EF;"></i><a class="subrayado"
-                        href="#inicioSesion">Cursos</a></li>
+                <li class="nav-item"><i class="fa-solid fa-chalkboard-user" style="color: #94B6EF;"></i><a
+                        class="subrayado" href="#inicioSesion">Cursos</a></li>
+                <li class="nav-item subrayado">Usuario:</li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section id="bienvenida">
+            <article class="recibimiento">
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="titulo">¡Bienvenido!</h1>
+                            <h2 class="subtitulo" id="nombreAlumno">Nombre del alumno</h2>
+                        </div>
 
+                        <div class="col-md-12">
+                            <p>Te encontrás en el campus del <strong>Centro de la Educación por el Futuro.</strong>
+                                ¡Acá vas a encontrar cursos para poder anotarte, tus clases grabadas y tus horarios!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contenedorDeFilas">
+                        <div class="row">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://static.vecteezy.com/system/resources/previews/009/755/279/non_2x/referral-group-icon-isolated-contour-symbol-illustration-vector.jpg"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <a class="card-title" href="#">Foro de consultas</a>
+                                            <p class="card-text">¡Accedé al foro de consultas en cualquier momento!
+                                                Consultá tus dudas en la comunidad y aprovechá la experiencia de tus
+                                                compañeros.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://davinci.vaneduc.edu.ar/media/17149/030118.jpg"
+                                            class="img-fluid rounded-start" alt="Cursos">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <a class="card-title">Cursos</a>
+                                            <p class="card-text">¡Accedé a todos los cursos que tenemos para vos!
+                                                Robótica para <strong>niños y adolescentes.</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://proexpansion.com/uploads/article/image/1871/larger_clase.jpg"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <a href="" class="card-title">Clases grabadas</a>
+                                            <p class="card-text">Tené acceso a tus clases las 24 horas del día. ¡No
+                                                lamentes haberte perdido una clase! Acá la podés volver a ver
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://www.grupobillingham.com/blog/wp-content/uploads/2022/12/planner-agenda-calendario.jpg"
+                                            class="img-fluid rounded-start" alt="Horarios">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <a href="" class="card-title">Horario</a>
+                                            <p class="card-text">A la hora de estudiar es muy importante tener los
+                                                horarios organizados. <strong>Consultá los tuyos.</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </article>
+        </section>
+
+        <section id="misHorarios">
+            <article>
+                <div class="container-md">
+                    <div class="contenedorTituloHorarios">
+                        <h2 class="tituloSecundario">¡Manejá tus horarios, chequeá tus clases y preparate!</h2>
+                        <p id="horariosDe">Horarios de </p>
+                    </div>
+
+                    <div class="table-responsive-md">
+                        <table class="table table-hover">
+                            <caption>Horarios <strong>semana 1</strong>, primer cuatrimestre 2024</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Días</th>
+                                    <th scope="col">Lunes</th>
+                                    <th scope="col">Martes</th>
+                                    <th scope="col">Jueves</th>
+                                    <th scope="col">Sábado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Clase</th>
+                                    <td>Introducción a robótica</td>
+                                    <td>Introducción a robótica</td>
+                                    <td>Bases de datos</td>
+                                    <td>Ética informática</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Horario</th>
+                                    <td>17:00hs</td>
+                                    <td>12:00hs</td>
+                                    <td>18:00hs</td>
+                                    <td>09:00hs</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fecha</th>
+                                    <td>12 de febrero</td>
+                                    <td>13 de febrero</td>
+                                    <td>15 de febrero</td>
+                                    <td>17 de febrero</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Profesor</th>
+                                    <td>Guillermo Aquiles</td>
+                                    <td>Guillermo Aquiles</td>
+                                    <td>Lucas Moyano</td>
+                                    <td>Luciana Molinas</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Observación</th>
+                                    <td>Virtual</td>
+                                    <td>Presencial</td>
+                                    <td>Presencial</td>
+                                    <td>Virtual</td>
+                                </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </article>
+        </section>
     </main>
 
-    <footer>
 
+
+    <footer>
+        <div class="filaSuperiorFooter">
+            <section id="redes">
+                <h5>¡Seguinos en nuestras redes y enterate de las novedades!</h4>
+                    <div class="redesFooter">
+                        <ul class="redesFooter">
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"
+                                        style="color: #213e60"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.linkedin.com/feed/" target="_blank"><i
+                                        class="fa-brands fa-linkedin" style="color: #213e60;"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.github.com/" target="_blank"><i class="fa-brands fa-github"
+                                        style="color: #213e60;"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+
+            <section id="ubicacion">
+                <h5>Vení a nuestra sucursal presencial en Constitución 180, Haedo.</h4>
+                    <div class="ubicacionFooter">
+                        <iframe class="mapa"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.334777087974!2d-58.59454392489921!3d-34.64624737293909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc784e6a00bcf%3A0xa2c5feb7ace3739e!2sConstituci%C3%B3n%20180%2C%20B1706%20Haedo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1699627554061!5m2!1ses!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </section>
+        </div>
+
+        <div class="filaInferiorFooter">
+            <section id="derechos">
+                <p class="derechosReservados">@Todos los derechos reservador a Centro de Educación por el Futuro</p>
+            </section>
+        </div>
     </footer>
 
-    
+
     <script src="https://kit.fontawesome.com/a72fbbe819.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-    <script src="./JS/script.js"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -352,6 +352,7 @@ form {
      justify-content: space-between;
 }
 
+/*-------------------------------------------- FOOTER -----------------------*/
 footer {
      display: flex;
      flex-direction: column;

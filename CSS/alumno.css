@@ -4,6 +4,7 @@
     scroll-behavior: smooth;
 }
 
+
 /* ----------------------- HEADER  ---------------------*/
 :root {
     --colorPrincipal: #213e60;
@@ -48,6 +49,7 @@ header {
     text-align: center;
 }
 
+.nav-item,
 .nav-item a {
     color: var(--colorSecundario);
 }
@@ -83,6 +85,137 @@ header {
     color: #94B6EF;
 }
 
-
 /*------------------------------------- MAIN ------------------------------*/
 
+#bienvenida {
+    padding: 2em;
+    min-height: 100vh;
+    background-color: var(--colorSecundario);
+}
+
+.titulo {
+    font-size: 4rem;
+}
+
+.recibimiento img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.contenedorDeFilas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em 0;
+}
+
+.card {
+    margin-right: 1em;
+    padding: 0;
+    transition: .5s all ease-in-out;
+}
+
+.row {
+    height: 100%;
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+#misHorarios {
+    padding: 2em;
+    min-height: 100vh;
+    background-color: var(--colorTerciario);
+}
+
+
+.tituloSecundario {
+    font-size: 2.5rem;
+    color:  var(--colorPrincipal);
+}
+
+.contenedorTituloHorarios {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+#horariosDe {
+    font-size: 1.3em;
+    color: #303030;
+}
+
+
+/*------------------------------------ FOOTER --------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.filaSuperiorFooter {
+    padding: 2em;
+    background-color: var(--colorCuternario);;
+    display: flex;
+    height: 90%;
+    width: 100%;
+}
+
+.filaInferiorFooter {
+    height: 30%;
+}
+
+#redes, 
+#contacto {   
+    width: 50%;
+}
+
+.redesFooter {
+    height: 80%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redesFooter li i {
+    font-size: 2em;
+}
+
+
+.ubicacionFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+
+.mapa {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.filaInferiorFooter {
+    background-color: var(--colorPrincipal);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.derechosReservados {
+    text-align: center;
+    color: #fafafa;
+}
