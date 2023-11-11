@@ -17,7 +17,7 @@ formulario.addEventListener('submit', function(e){
 
 function ingresarAlumnoSiEsValido (usuarioIngresado, contraseñaIngresada) {
     if (usuarioIngresado === usuarioCorrecto && contraseñaIngresada === contraseñaCorecta) {
-        window.location.href = '#acercaNosotros';
+        window.location.href = './alumno.html';
         usuario.value = '';
         contraseña.value = '';
     }

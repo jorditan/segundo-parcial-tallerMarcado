@@ -26,6 +26,7 @@ header {
 }
 
 .nav-list {
+     padding: 0;
      width: 80%;
      height: 100%;
      display: flex;
@@ -82,7 +83,6 @@ header {
 .subrayado:hover {
      color: #94B6EF;
 }
-
 
 /* ----------------------- MAIN ---------------------*/
 
@@ -415,6 +415,7 @@ footer {
 }
 
 .derechosReservados {
+     text-align: center;
      color: #fafafa;
 }
 
@@ -424,4 +425,122 @@ footer {
      transition: .5 all ease-in;
 }
 
+.card {
+     max-width: 540px; 
+     max-height: 20em;
+}
 
+
+/*------------------------- MEDIAS QUERIES-----------------------*/
+
+@media screen and (max-width: 995px) {
+     .login {
+          flex-direction: column;
+          justify-content: space-evenly;
+          height: auto;
+     }
+     .columnaDerechaLogin {
+          justify-content: right;
+          align-items: flex-end;
+     }
+     .contenedorTitulo {
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 860px) {
+     .nombreNav {
+          font-size: 1.5em;
+     }
+}
+
+@media screen and (max-width: 768px) {
+     .titulo {
+          font-size: 3.5rem;
+     }
+     .tituloLogin, .tituloSecundario {
+          font-size: 3rem;
+     }
+     .nombreNav {
+          font-size: 1.2em;
+     }
+     .navBar {
+          width: 100%;
+     }
+     .navBrand {
+          margin-left: 2em;
+     }
+     .nav-list {
+          width: 100%;
+     }
+     .login {
+          flex-direction: column;
+          align-items: center;
+     }
+     .columnaIzquierdaLogin {
+          width: auto;
+          height: auto;
+     }
+     .card {
+          width: 25em;
+     }
+     .col-md-4 img {
+          display: none;
+     }
+     .columnaDerechaLogin img {
+          height: 80%;
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 560px) {
+     .filaSuperiorFooter {
+          height: auto;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     #ubicacion,
+     #redes {
+          width: 100%;
+          text-align: center;
+     }
+}
+
+@media screen and (max-width: 676px) {
+     .contenedorTarjetas {
+          flex-direction: column;
+          align-items: center;
+     }
+     .tarjetaCurso {
+          width: 16em;
+          margin: 2em;
+     }
+     .navBrand {
+          display: none;
+     }
+     .metodos {
+          flex-direction: column;
+          height: 30em;
+          justify-content: space-around;
+     }
+     .accordion {
+          width: 100%;
+     }
+}
+
+@media screen and (max-width:436px) {
+     .card {
+          width: 15em;
+     }
+     .nav-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+     .nav-item i {
+          margin-bottom: 5px;
+     }
+} 
