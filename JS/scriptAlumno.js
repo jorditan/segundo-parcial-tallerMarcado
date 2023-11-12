@@ -26,7 +26,7 @@ formularioSeminario.addEventListener('submit', (e) => {
     validarSeleccionSeminario(seminarioSeleccionado);
 
     if (alertaCorreo.innerHTML === '' && alertaObservaciones.innerHTML === '' && alertaHorario.innerHTML === '' && alertaSeminario.innerHTML === '') {
-        alert('Formulario enviado correctamente');
+        alert('Asistencia reservada correctamente');
     }
 
     observaciones.value = '';
@@ -54,7 +54,7 @@ function validarObservaciones(observacionesIngresadas) {
 }
 
 function validarSeleccionHorario (unHorario) {
-    if (unHorario == 'Selecciona una opción') {
+    if (unHorario == 'Selecciona una opción' || unHorario == '') {
         alertaHorario.innerHTML = "Porfavor, seleccione un horario";
         setTimeout(() => {
             alertaHorario.innerHTML = '';
@@ -63,7 +63,7 @@ function validarSeleccionHorario (unHorario) {
 }
 
 function validarSeleccionSeminario (unSeminario) {
-    if (unSeminario == 'Seleccione un seminario') {
+    if (unSeminario == 'Seleccione un seminario' || unSeminario == '') {
         alertaSeminario.innerHTML = 'Porfavor, ingrese un seminario';
         setTimeout(() => {
             alertaSeminario.innerHTML = ""
@@ -80,6 +80,7 @@ botonesCancelar.forEach(boton => {
 document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
     const usuario = urlParams.get('usuario');
+    console.log(usuario);
     usuarioNav.innerText = 'Usuario: ' + usuario ;
 
     if (usuario) {

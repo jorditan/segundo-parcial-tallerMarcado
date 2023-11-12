@@ -18,10 +18,10 @@ formulario.addEventListener('submit', function(e){
 
 function ingresarUsuario(usuarioIngresado, contraseñaIngresada) {
     if (usuarioIngresado == usuarioCorrectoAlumno && contraseñaIngresada == contraseñaCorrecta) {
-        window.location.href = "./alumno.html?=usuario" + usuarioIngresado;
+        window.location.href = "./alumno.html?usuario=" + usuarioIngresado;
     }
     else if (usuarioIngresado == usuarioCorrectoDocente && contraseñaIngresada == contraseñaCorrecta) {
-        window.location.href = "./docente.html?=docente" + usuarioIngresado;
+        window.location.href = "./docente.html?docente=" + usuarioIngresado;
     }
     validarUsuario(usuarioIngresado, usuarioCorrectoAlumno);
     validarContraseña(contraseñaIngresada, contraseñaCorrecta);
