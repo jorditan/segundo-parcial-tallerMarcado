@@ -13,18 +13,18 @@ formulario.addEventListener('submit', function(e){
     let usuarioIngresado = usuario.value;
     let contraseñaIngresada = contraseña.value;
 
-    ingresarAlumnoSiEsValido(usuarioIngresado, contraseñaIngresada); 
-    ingresarDocenteSiEsValido(usuarioIngresado, contraseñaIngresada);
+    ingresarUsuario(usuarioIngresado, contraseñaIngresada); 
 })
 
-function ingresarAlumnoSiEsValido (usuarioIngresado, contraseñaIngresada) {
-    if (usuarioIngresado === usuarioCorrectoAlumno && contraseñaIngresada === contraseñaCorrecta) {
-        window.location.href = './alumno.html?usuario=' + usuarioIngresado;
+function ingresarUsuario(usuarioIngresado, contraseñaIngresada) {
+    if (usuarioIngresado == usuarioCorrectoAlumno && contraseñaIngresada == contraseñaCorrecta) {
+        window.location.href = "./alumno.html?=usuario" + usuarioIngresado;
     }
-    else {
-        validarUsuario(usuarioIngresado, usuarioCorrectoAlumno);
-        validarContraseña(contraseñaIngresada, contraseñaCorrecta);
+    else if (usuarioIngresado == usuarioCorrectoDocente && contraseñaIngresada == contraseñaCorrecta) {
+        window.location.href = "./docente.html?=docente" + usuarioIngresado;
     }
+    validarUsuario(usuarioIngresado, usuarioCorrectoAlumno);
+    validarContraseña(contraseñaIngresada, contraseñaCorrecta);
 }
 
 function validarUsuario(usuarioIngresado, usuarioCorrectoAlumno) {
@@ -34,7 +34,7 @@ function validarUsuario(usuarioIngresado, usuarioCorrectoAlumno) {
             alertaUsuario.innerHTML = ''
         }, 3000);
     }
-    else if (usuarioIngresado !== usuarioCorrectoAlumno) {
+    else if (usuarioIngresado != usuarioCorrectoAlumno && usuarioIngresado != usuarioCorrectoDocente) {
         alertaUsuario.innerHTML = 'Ese usario es inexistente, porfavor ingrese otro'
         setTimeout(() => {
             alertaUsuario.innerHTML = ''
@@ -54,11 +54,5 @@ function validarContraseña(contraseñaIngresada, contraseñaCorrecta) {
         setTimeout(() => {
             alertaContraseña.innerHTML = ''
         }, 3000);
-    }
-}
-
-function ingresarDocenteSiEsValido(usuarioIngresado, usuarioCorrectoDocente, contraseñaIngresada) {
-    if (usuarioIngresado === usuarioCorrectoDocente && contraseñaIngresada === contraseñaCorrecta) {
-        window.location.href = './docente.html?usuario=' + usuarioIngresado;
     }
 }
